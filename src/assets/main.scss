@@ -1,0 +1,40 @@
+@import './config/extend.scss';
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container-navbar {
+    width: 100%;
+    height: auto;
+    padding: 12px 36px;
+    background-color: #303030;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+        font-size: 36px;
+        font-family: sans-serif;
+        color: #f9f5f4;
+    }
+    nav {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        p {
+            font-size: 18px;
+            font-family: sans-serif;
+            color: #f9f5f4;
+            margin: 0 12px;
+        }
+    }
+}
+
+@import "./view/LoginView";
+@import "./view/RegistroView";
+@import "./view/ChatView";
